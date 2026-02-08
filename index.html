@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ekstrakurikuler Robotik MAN 1 Cirebon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="logo">Robotik MAN 1 Cirebon</div>
+    <ul>
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#galeri">Galeri</a></li>
+      <li><a href="#pendaftaran">Pendaftaran</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+    <div class="burger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </nav>
+
+  <!-- Header with Particles -->
+  <header>
+    <canvas id="particles"></canvas>
+    <div class="header-content">
+      <h1>Ekstrakurikuler Robotik</h1>
+      <p>Mengasah Kreativitas & Kecerdasan Teknologi</p>
+      <button onclick="document.getElementById('tentang').scrollIntoView({behavior:'smooth'})">Pelajari Lebih Lanjut</button>
+    </div>
+  </header>
+
+  <!-- Tentang Eskul -->
+  <section id="tentang" class="fade-in slide-in-left">
+    <h2>Tentang Robotik</h2>
+    <p>Ekstrakurikuler Robotik di MAN 1 Cirebon mengajarkan siswa memahami robot, pemrograman, dan inovasi teknologi. Kegiatan meliputi pembuatan robot, lomba robot, dan proyek teknologi.</p>
+    <ul>
+      <li>Meningkatkan kreativitas siswa.</li>
+      <li>Melatih kemampuan teknis dan logika.</li>
+      <li>Mempersiapkan lomba dan kompetisi robotik.</li>
+    </ul>
+  </section>
+
+  <!-- Galeri Carousel + Lightbox -->
+  <section id="galeri" class="fade-in slide-in-right">
+    <h2>Galeri Kegiatan</h2>
+    <div class="carousel">
+      <div class="carousel-track">
+        <img src="https://source.unsplash.com/400x250/?robot,technology" alt="Robot 1">
+        <img src="https://source.unsplash.com/400x250/?robotics,tech" alt="Robot 2">
+        <img src="https://source.unsplash.com/400x250/?students,robot" alt="Robot 3">
+        <img src="https://source.unsplash.com/400x250/?competition,robot" alt="Robot 4">
+      </div>
+      <button class="prev">&#10094;</button>
+      <button class="next">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- Pendaftaran Google Form -->
+  <section id="pendaftaran" class="fade-in slide-in-up">
+    <h2>Pendaftaran Anggota Robotik</h2>
+    <p>Silakan isi form berikut untuk menjadi anggota ekstrakurikuler Robotik MAN 1 Cirebon.</p>
+    
+    <!-- Embed Google Form (Ganti LINK_GOOGLE_FORM dengan link embedmu) -->
+    <iframe src="LINK_GOOGLE_FORM" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Memuat…</iframe>
+
+    <p>Atau klik tombol berikut untuk membuka form di tab baru:</p>
+    <a href="LINK_GOOGLE_FORM" target="_blank">
+      <button>Isi Form Pendaftaran</button>
+    </a>
+  </section>
+
+  <!-- Kontak / Footer -->
+  <footer id="kontak" class="fade-in slide-in-up">
+    <h2>Kontak</h2>
+    <p>Email: eskul.robotik@mansaci.sch.id</p>
+    <p>Telepon: (0231) 123456</p>
+    <p>&copy; 2026 Ekstrakurikuler Robotik MAN 1 Cirebon</p>
+  </footer>
+
+  <!-- Lightbox -->
+  <div id="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" src="">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
