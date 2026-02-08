@@ -45,3 +45,20 @@ function init(){for(let i=0;i<100;i++){particlesArray.push(new Particle());}}
 function animate(){ ctx.clearRect(0,0,canvas.width,canvas.height); particlesArray.forEach(p=>{p.update(); p.draw();}); requestAnimationFrame(animate);}
 init(); animate();
 window.addEventListener('resize',()=>{ canvas.width=window.innerWidth; canvas.height=500; });
+
+// Dark mode toggle
+const darkModeBtn = document.getElementById('darkModeBtn');
+if(localStorage.getItem('darkMode') === 'enabled'){
+  document.body.classList.add('dark');
+  darkModeBtn.textContent='☀️ Mode Terang';
+}
+darkModeBtn.addEventListener('click',()=>{
+  document.body.classList.toggle('dark');
+  if(document.body.classList.contains('dark')){
+    localStorage.setItem('darkMode','enabled');
+    darkModeBtn.textContent='☀️ Mode Terang';
+  }else{
+    localStorage.setItem('darkMode','disabled');
+    darkModeBtn.textContent='🌙 Mode Malam';
+  }
+});
